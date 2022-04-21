@@ -1,0 +1,801 @@
+{
+	"info": {
+		"_postman_id": "75c50bf3-4377-4609-93e4-b58629168b81",
+		"name": "EmployeeService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Employee Domain",
+			"item": [
+				{
+					"name": "GetEmp only by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:64562/employee-service/Employee/someid1",
+							"host": [
+								"localhost"
+							],
+							"port": "64562",
+							"path": [
+								"employee-service",
+								"Employee",
+								"someid1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Employee info only",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:64562/employee-service/Employee",
+							"host": [
+								"localhost"
+							],
+							"port": "64562",
+							"path": [
+								"employee-service",
+								"Employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new Employee only",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": \"someid2\",\r\n    \"userID\": \"333\",\r\n    \"firstName\": \"Dummy\",\r\n    \"lastName\": \"lastname\",\r\n    \"middleName\": \"null\",\r\n    \"preferedName\": \"noname\",\r\n    \"email\": \"abc@email.com\",\r\n    \"cellPhone\": \"1234567890\",\r\n    \"alternatePhone\": \"null\",\r\n    \"gender\": \"M\",\r\n    \"startDate\": \"2022-04-05T06:51:57.061+00:00\",\r\n    \"endDate\": \"2022-04-05T06:51:57.061+00:00\",\r\n    \"driverLicense\": \"null\",\r\n    \"driverLicenseExpiration\": \"2022-04-05T06:51:57.061+00:00\",\r\n    \"houseID\": 55,\r\n    \"ssn\": \"987654321\",\r\n    \"dob\": \"2022-04-05T06:51:57.061+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:13664/employee-service/Employee/add",
+							"host": [
+								"localhost"
+							],
+							"port": "13664",
+							"path": [
+								"employee-service",
+								"Employee",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"someid2\",\r\n    \"userID\": 225,\r\n    \"firstName\": \"Dummy2\",\r\n    \"lastName\": \"lastname\",\r\n    \"middleName\": \"null\",\r\n    \"preferedName\": \"noname\",\r\n    \"email\": \"abc@email.com\",\r\n    \"cellPhone\": \"1234567890\",\r\n    \"alternatePhone\": \"null\",\r\n    \"gender\": \"M\",\r\n    \"startDate\": \"2022-04-05T06:51:57.061+00:00\",\r\n    \"endDate\": \"2022-04-05T06:51:57.061+00:00\",\r\n    \"driverLicense\": \"null\",\r\n    \"driverLicenseExpiration\": \"2022-04-05T06:51:57.061+00:00\",\r\n    \"houseID\": 55,\r\n    \"ssn\": \"987654321\",\r\n    \"dob\": \"2022-04-05T06:51:57.061+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:61346/employee-service/Employee/update",
+							"host": [
+								"localhost"
+							],
+							"port": "61346",
+							"path": [
+								"employee-service",
+								"Employee",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Employee",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:62669/employee-service/Employee/delete/123",
+							"host": [
+								"localhost"
+							],
+							"port": "62669",
+							"path": [
+								"employee-service",
+								"Employee",
+								"delete",
+								"123"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contact Domain",
+			"item": [
+				{
+					"name": "Get All Contact",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/employee-service/Contact",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"employee-service",
+								"Contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Contact",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"someid1-10\",\r\n    \"firstName\": \"contact5\",\r\n    \"lastName\": \"dummy1\",\r\n    \"cellPhone\": \"55555555\",\r\n    \"alternatePhone\": \"\",\r\n    \"email\": \"contact@email.com\",\r\n    \"relationship\": \"stanger\",\r\n    \"type\": \"?\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:56318/employee-service/Contact/add",
+							"host": [
+								"localhost"
+							],
+							"port": "56318",
+							"path": [
+								"employee-service",
+								"Contact",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Contact To a UserId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"someid1-10\",\r\n    \"firstName\": \"contact333\",\r\n    \"lastName\": \"dummy3\",\r\n    \"cellPhone\": \"55555555\",\r\n    \"alternatePhone\": \"33333333\",\r\n    \"email\": \"contact3@email.com\",\r\n    \"relationship\": \"stanger\",\r\n    \"type\": \"?\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:56318/employee-service/Contact/add/333",
+							"host": [
+								"localhost"
+							],
+							"port": "56318",
+							"path": [
+								"employee-service",
+								"Contact",
+								"add",
+								"333"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Contact",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"someid1-10\",\r\n    \"firstName\": \"contact51\",\r\n    \"lastName\": \"dummy1\",\r\n    \"cellPhone\": \"55555555\",\r\n    \"alternatePhone\": \"\",\r\n    \"email\": \"contact@email.com\",\r\n    \"relationship\": \"stanger\",\r\n    \"type\": \"?\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:56318/employee-service/Contact/update",
+							"host": [
+								"localhost"
+							],
+							"port": "56318",
+							"path": [
+								"employee-service",
+								"Contact",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Contact",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:56344/employee-service/Contact/delete/someid1-10",
+							"host": [
+								"localhost"
+							],
+							"port": "56344",
+							"path": [
+								"employee-service",
+								"Contact",
+								"delete",
+								"someid1-10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Address Domain",
+			"item": [
+				{
+					"name": "Get All Address",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9000/employee-service/Address",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"employee-service",
+								"Address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new Address",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"someid1-1\",\r\n    \"addressLine1\" : \"somewhere in NJ\",\r\n    \"addressLine2\" : \"apt 55\",\r\n    \"city\": \"East w\",\r\n    \"state\": \"NJ\",\r\n    \"zipCode\": \"08520\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:64056/employee-service/Address/add",
+							"host": [
+								"localhost"
+							],
+							"port": "64056",
+							"path": [
+								"employee-service",
+								"Address",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add new Address To a UserId",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"someid1-1\",\r\n    \"addressLine1\" : \"somewhere in NJ\",\r\n    \"addressLine2\" : \"apt 333\",\r\n    \"city\": \"East wind\",\r\n    \"state\": \"NJ\",\r\n    \"zipCode\": \"08333\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:64056/employee-service/Address/add/333",
+							"host": [
+								"localhost"
+							],
+							"port": "64056",
+							"path": [
+								"employee-service",
+								"Address",
+								"add",
+								"333"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Address",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"someid1-1\",\r\n    \"addressLine1\" : \"somewhere in NJ\",\r\n    \"addressLine2\" : \"apt 55\",\r\n    \"city\": \"East w\",\r\n    \"state\": \"NJ\",\r\n    \"zipCode\": \"08520\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:56344/employee-service/Address/update",
+							"host": [
+								"localhost"
+							],
+							"port": "56344",
+							"path": [
+								"employee-service",
+								"Address",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Address",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:56344/employee-service/Address/delete/someid1-1",
+							"host": [
+								"localhost"
+							],
+							"port": "56344",
+							"path": [
+								"employee-service",
+								"Address",
+								"delete",
+								"someid1-1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PersonalDoc Domain",
+			"item": [
+				{
+					"name": "Get Doc",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:13145/employee-service/PersonalDoc/123 - 1",
+							"host": [
+								"localhost"
+							],
+							"port": "13145",
+							"path": [
+								"employee-service",
+								"PersonalDoc",
+								"123 - 1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Doc",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"123 - 1\",\r\n    \"path\": \"c:d/e\",\r\n    \"title\" : \"what title\",\r\n    \"comment\" : \"no comment\",\r\n    \"date\" : \"2022-04-07T04:32:54.345+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:13145/employee-service/PersonalDoc/add",
+							"host": [
+								"localhost"
+							],
+							"port": "13145",
+							"path": [
+								"employee-service",
+								"PersonalDoc",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Doc to a User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"doc1\",\r\n    \"path\": \"c:d/e\",\r\n    \"title\" : \"what title\",\r\n    \"comment\" : \"no comment\",\r\n    \"date\" : \"2022-04-07T04:32:54.345+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:13145/employee-service/PersonalDoc/add/333",
+							"host": [
+								"localhost"
+							],
+							"port": "13145",
+							"path": [
+								"employee-service",
+								"PersonalDoc",
+								"add",
+								"333"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Doc",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": \"123 - 1\",\r\n    \"path\": \"c:d/e/f\",\r\n    \"title\" : \"what title\",\r\n    \"comment\" : \"no comment\",\r\n    \"date\" : \"2022-04-07T04:32:54.345+00:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:13145/employee-service/PersonalDoc/update",
+							"host": [
+								"localhost"
+							],
+							"port": "13145",
+							"path": [
+								"employee-service",
+								"PersonalDoc",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Doc",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:13145/employee-service/PersonalDoc/delete/123 - 1",
+							"host": [
+								"localhost"
+							],
+							"port": "13145",
+							"path": [
+								"employee-service",
+								"PersonalDoc",
+								"delete",
+								"123 - 1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "VisaStatus Domain",
+			"item": [
+				{
+					"name": "get visa status",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:13145/employee-service/VisaStatus/123-1",
+							"host": [
+								"localhost"
+							],
+							"port": "13145",
+							"path": [
+								"employee-service",
+								"VisaStatus",
+								"123-1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add VisaStatus",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"id\" : \"123-1\",\r\n\"visaType\" : \"opt\",\r\n\"activeFlag\" : false,\r\n\"startDate\" : \"2000\",\r\n\"endDate\" : \"2002\",\r\n\"lastModificationDate\" : \"2002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:13145/employee-service/VisaStatus/add",
+							"host": [
+								"localhost"
+							],
+							"port": "13145",
+							"path": [
+								"employee-service",
+								"VisaStatus",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add VisaStatus to a User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"id\" : \"123-1\",\r\n\"visaType\" : \"opt\",\r\n\"activeFlag\" : false,\r\n\"startDate\" : \"2000\",\r\n\"endDate\" : \"2002\",\r\n\"lastModificationDate\" : \"2002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:13145/employee-service/VisaStatus/add/555",
+							"host": [
+								"localhost"
+							],
+							"port": "13145",
+							"path": [
+								"employee-service",
+								"VisaStatus",
+								"add",
+								"555"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Visa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"id\" : \"123-1\",\r\n\"visaType\" : \"opt2\",\r\n\"activeFlag\" : true,\r\n\"startDate\" : \"2000\",\r\n\"endDate\" : \"2002\",\r\n\"lastModificationDate\" : \"2002\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:13145/employee-service/VisaStatus/update",
+							"host": [
+								"localhost"
+							],
+							"port": "13145",
+							"path": [
+								"employee-service",
+								"VisaStatus",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete visa",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:13145/employee-service/VisaStatus/delete/123-1",
+							"host": [
+								"localhost"
+							],
+							"port": "13145",
+							"path": [
+								"employee-service",
+								"VisaStatus",
+								"delete",
+								"123-1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Full Emp Service",
+			"item": [
+				{
+					"name": "Full EmployeeInfo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:13145/employee-service/EmployeeSuit/PersonalInfo/123",
+							"host": [
+								"localhost"
+							],
+							"port": "13145",
+							"path": [
+								"employee-service",
+								"EmployeeSuit",
+								"PersonalInfo",
+								"123"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "HR part",
+			"item": [
+				{
+					"name": "Get all Employee with page(current page size 2)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:13664/employee-service/EmployeeSuit/HR/Viewprofiles?page=1&size=2",
+							"host": [
+								"localhost"
+							],
+							"port": "13664",
+							"path": [
+								"employee-service",
+								"EmployeeSuit",
+								"HR",
+								"Viewprofiles"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Employee By Email with page(current page size 2)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9614/employee-service/EmployeeSuit/HR/Viewprofiles?email=abc&page=0&size=2",
+							"host": [
+								"localhost"
+							],
+							"port": "9614",
+							"path": [
+								"employee-service",
+								"EmployeeSuit",
+								"HR",
+								"Viewprofiles"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "abc"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Employee By Firstname with page(current page size 2)",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9614/employee-service/EmployeeSuit/HR/Viewprofiles?email=abc&page=0&size=2",
+							"host": [
+								"localhost"
+							],
+							"port": "9614",
+							"path": [
+								"employee-service",
+								"EmployeeSuit",
+								"HR",
+								"Viewprofiles"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "abc"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
